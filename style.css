@@ -58,7 +58,7 @@ html, body {
     position: absolute;
     top: 12px;
     right: 13px;
-    width: 267px;
+    width: 400px;
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
@@ -125,8 +125,9 @@ html, body {
 }
 
 .notif-list .text h5 {
-    font-size: 8px;
-    line-height: 12px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
     color: #2E2E2E;
     margin: 0;
     margin-bottom: 6px;
@@ -134,15 +135,15 @@ html, body {
 
 .notif-list .text span {
     font-weight: bold;
-    font-size: 5px;
-    line-height: 7px;
+    font-size: 11px;
+    line-height: 16px;
     color: #2E2E2E;
 }
 
 .notif-list .text p {
     font-weight: normal;
-    font-size: 6px;
-    line-height: 9px;
+    font-size: 11px;
+    line-height: 16px;
     color: #3B3B3B;
     margin-bottom: 0;
 }
@@ -155,8 +156,8 @@ html, body {
     justify-content: center;
     padding: 6px 0;
     font-weight: 400;
-    font-size: 8px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 19px;
     color: #3B3B3B;
     cursor: pointer;
 }
@@ -282,8 +283,8 @@ html, body {
     left: 450px;
     bottom: 150px;
     display: flex;
-    width: 184px;
-    height: 65px;
+    width: 350px;
+    min-height: 65px;
 }
 
 .point-conflict {
@@ -291,8 +292,8 @@ html, body {
     right: 100px;
     top: 400px;
     display: flex;
-    width: 184px;
-    height: 65px;
+    width: 350px;
+    min-height: 65px;
 }
 
 .point-wrapper.info-left {
@@ -301,18 +302,19 @@ html, body {
 
 .point-wrapper .point {
     display: block;
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     border-radius: 100px;
     background-color: #A90000;
-    margin-top: 12px;
-    margin-left: 7px;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 .point-wrapper .icon-point {
     width: 17px;
     height: 22px;
     display: none;
+    margin: -10px 0 0 10px;
 }
 
 .point-wrapper .info {
@@ -322,7 +324,7 @@ html, body {
     padding: 12px;
     align-items: flex-start;
     flex-direction: row;
-    width: 150px;
+    width: 300px;
     margin: 20px 0 0 5px;
     display: flex;
     opacity: 0;
@@ -336,10 +338,10 @@ html, body {
 
 .point-wrapper input {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
+    left: 10px;
+    top: 15px;
+    width: 24px;
+    height: 24px;
     margin: 0;
     z-index: 10;
     cursor: pointer;
@@ -348,7 +350,8 @@ html, body {
 
 .point-wrapper.info-left input {
     left: unset;
-    right: 0;
+    right: -5px;
+    top: 5px;
 }
 
 .point-wrapper input:checked ~ .info {
@@ -368,6 +371,10 @@ html, body {
     display: none;
 }
 
+.point-wrapper input:checked {
+    top: -10px;
+}
+
 .point-wrapper .info img {
     width: 9px;
     height: 12px;
@@ -380,16 +387,17 @@ html, body {
 }
 
 .point-wrapper .info h5 {
-    font-size: 8px;
-    line-height: 12px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
     color: #2E2E2E;
     margin: 0;
     margin-bottom: 2px;
 }
 
 .point-wrapper .info p {
-    font-size: 6px;
-    line-height: 9px;
+    font-size: 12px;
+    line-height: 17px;
     color: #3B3B3B;
     margin: 0;
 }
